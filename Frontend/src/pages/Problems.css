@@ -1,0 +1,75 @@
+/* Full page layout */
+.problems-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;  /* Horizontal center */
+  align-items: center;      /* Vertical center */
+  background: linear-gradient(to bottom right, #f0f4f8, #cbd5e0);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Card-style container */
+.problems-container {
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Title */
+.problems-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #1a202c;
+}
+
+/* Table */
+.problems-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.problems-table th,
+.problems-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.problems-table th {
+  background-color: #f7fafc;
+  font-weight: bold;
+}
+
+.problems-table tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* Difficulty colors */
+.easy {
+  color: green;
+  font-weight: bold;
+}
+.medium {
+  color: orange;
+  font-weight: bold;
+}
+.hard {
+  color: red;
+  font-weight: bold;
+}
+.clickable-row {
+  cursor: pointer;
+}
+
+.clickable-row:hover {
+  background-color: #e6f0ff;
+}
+
