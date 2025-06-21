@@ -61,7 +61,7 @@ const Compiler = () => {
     setLoadingReview(true);
     setReview('');
     try {
-      const res = await axios.post('https://localhost/compiler/ai-review', {
+      const res = await axios.post('https://rishuharsh.xyz/compiler/ai-review', {
         code,
       });
       // convert markdown to HTML safely
