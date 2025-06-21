@@ -21,7 +21,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://rishuharsh.xyz:3000/user/register', formData);
+      const res = await axios.post('https://rishuharsh.xyz/user/register', formData);
       setMessage(res.data.message || 'Registered successfully!');
       setTimeout(() => navigate('/login'), 1500); // ✅ Redirect after 1.5 sec
     } catch (error) {
