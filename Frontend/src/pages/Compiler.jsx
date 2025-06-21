@@ -18,7 +18,7 @@ const Compiler = () => {
   useEffect(() => {
     const fetchProblem = async () => {
       try {
-        const res = await axios.get(`http://rishuharsh.xyz:3000/problems/${id}`);
+        const res = await axios.get(`https://rishuharsh.xyz:3000/problems/${id}`);
         setProblem(res.data);
       } catch (error) {
         console.error("Error fetching problem:", error);
@@ -29,7 +29,7 @@ const Compiler = () => {
 
   const handleRun = async () => {
     try {
-      const res = await axios.post('http://rishuharsh.xyz:3000/compiler/run', {
+      const res = await axios.post('https://rishuharsh.xyz:3000/compiler/run', {
         language,
         code,
         input: userInput,
@@ -42,7 +42,7 @@ const Compiler = () => {
 
   const handleSubmit = async () => {
     try {
-      const res = await axios.post('http://localhost:3000/compiler/submit', {
+      const res = await axios.post('https://localhost:3000/compiler/submit', {
         code,
         language,
         input: userInput,
@@ -61,7 +61,7 @@ const Compiler = () => {
     setLoadingReview(true);
     setReview('');
     try {
-      const res = await axios.post('http://localhost:3000/compiler/ai-review', {
+      const res = await axios.post('https://localhost:3000/compiler/ai-review', {
         code,
       });
       // convert markdown to HTML safely

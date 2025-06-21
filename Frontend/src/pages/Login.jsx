@@ -19,7 +19,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://rishuharsh.xyz:3000/user/login', credentials);
+      const res = await axios.post('https://rishuharsh.xyz:3000/user/login', credentials);
 
       setMessage(res.data.message || 'Login successful!');
       
